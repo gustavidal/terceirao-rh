@@ -5,12 +5,329 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: red;
+    background: linear-gradient(to right, #e94230, #312f2f);
     color: white;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar img {
+    width: 30px;
+}
+
+.navbar h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navbar a {
     color: white;
     margin-left: 15px;
     font-weight: bold;
+}
+
+/* CONTAINER */
+main {
+    width: 100%;
+    padding: 30px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* KANBAN */
+.kanban {
+    display: flex;
+    gap: 10px;
+}
+
+.col {
+    flex: 1;
+    background: #f1f3f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.col h4 {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.pendente {
+    background: #e74c3c;
+}
+
+.andamento {
+    background: #f39c12;
+}
+
+.concluido {
+    background: #27ae60;
+}
+
+.task {
+    background: white;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* EVENTOS */
+.event-list {
+    display: flex;
+    gap: 10px;
+}
+
+.event {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.azul {
+    background: #3498db;
+}
+
+.marrom {
+    background: #8e5a3c;
+}
+
+/* PROJETOS */
+.projects {
+    display: flex;
+    gap: 10px;
+}
+
+.project {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.blue {
+    background: #2980b9;
+}
+
+.orange {
+    background: #e67e22;
+}
+
+.green {
+    background: #27ae60;
+}
+
+/* AVISOS */
+.avisos ul {
+    padding-left: 15px;
+}
+
+/* FOOTER */
+.copyright {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.instas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5e3333;
+    border-radius: 8px;
+    padding: 12px 5px 10px 5px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.instas a {
+    display: flex;
+    gap: 8px;
+    color: #e66051;
+    text-align: center;
+    margin-left: 2.5em;
+}
+
+.instas a .dev-link {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 130px;
+}
+
+.instas a .dev-link:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.lista-devs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    padding: 0.4rem;
+    gap: 3px;
+}
+
+.icon {
+    width: 20px;
+}
+
+@media (max-width: 1024px) {
+    main {
+        margin-top: 70px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        /* vira 1 coluna */
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    /* projetos ficam 2 por linha */
+    .projects {
+        flex-wrap: wrap;
+    }
+
+    .project {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    /* eventos empilhados */
+    .event-list {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+    }
+
+    .user {
+        align-self: flex-end;
+    }
+
+    /* TEXTO */
+    h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    /* CARDS */
+    .card {
+        padding: 15px;
+    }
+
+    /* KANBAN vira vertical */
+    .kanban {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    /* projetos 1 por linha */
+    .project {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin-top: 80px;
+    }
+
+    .navbar {
+        padding: 12px 15px;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .card-header {
+        font-size: 14px;
+    }
+
+    .task {
+        font-size: 12px;
+    }
+
+    .event {
+        font-size: 12px;
+    }
 }

@@ -1,26 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terceirão RH</title>
+    <link rel="icon" type="image/jpg" href="./img/logo-terceirao.jpg">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="./main.js" defer></script>
 </head>
+
 <body>
     <!-- NAVBAR -->
     <header class="navbar">
-        <h1>🎓 TerceirãoRH</h1>
+        <h1>
+            <img src="./img/logo-terceirao.jpg" alt="">
+            TerceirãoRH
+        </h1>
         <nav>
-            <a href="#">Tarefas</a>
-            <a href="#">Projetos</a>
-            <a href="#">Calendário</a>
+            <a href="#avisos">Avisos</a>
+            <a href="#tarefas">Tarefas</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#projetos">Projetos</a>
         </nav>
     </header>
     <main>
-fyfyujfyj
+        <div class="grid">
+            <!-- AVISOS -->
+            <section class="card avisos" id="avisos">
+                <div class="card-header">Avisos da Turma</div>
+
+                <ul>
+                    <li>Levar dinheiro para o café</li>
+                    <li>Prova de matemática sexta</li>
+                    <li>Montagem do mural amanhã</li>
+                </ul>
+            </section>
+
+            <!-- TAREFAS -->
+            <section class="card tarefas" id="tarefas">
+                <div class="card-header">Quadro de Tarefas</div>
+
+                <div class="kanban">
+                    <div class="col">
+                        <h4 class="pendente">Pendentes</h4>
+                        <div class="task">Estudar História</div>
+                        <div class="task">Trabalho de Química</div>
+                    </div>
+
+                    <div class="col">
+                        <h4 class="andamento">Em andamento</h4>
+                        <div class="task">Pesquisa de Geografia</div>
+                    </div>
+
+                    <div class="col">
+                        <h4 class="concluido">Concluídas</h4>
+                        <div class="task">Redação entregue</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EVENTOS -->
+            <section class="card eventos" id="eventos">
+                <div class="card-header">Próximos Eventos</div>
+
+                <div class="event-list">
+                    <div class="event azul">
+                        <h4>Café da Manhã</h4>
+                        <span>28 Abril</span>
+                    </div>
+
+                    <div class="event marrom">
+                        <h4>Amigo Chocolate</h4>
+                        <span>05 Maio</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJETOS -->
+            <section class="card projetos" id="projetos">
+                <div class="card-header">Projetos da Turma</div>
+
+                <div class="projects">
+                    <div class="project blue">Feira de Ciências</div>
+                    <div class="project orange">Ação Solidária</div>
+                    <div class="project green">Gincana Esportiva</div>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>rgbrgbrg</footer>
+    <footer class="footer">
+        <p class="copyright">© 2026 — Terceirão RH. <br> Todos os direitos reservados.</p>
+
+        <div class="instas">
+            <p class="sala">Acesse o nosso instagram:</p>
+            <a href="https://www.instagram.com/terceirorh_etec/">
+                <span class="icon">📷</span>
+                <p class="dev-link">terceirorh_etec</p>
+            </a>
+
+            <div class="lista-devs">
+                <p>Conheça nossos desenvolvedores:</p>
+
+                <a href="https://www.instagram.com/gustavv.idal/">
+                    <span class="icon">📷</span>
+                    <p class="dev-link">gustavv.idal</p>
+                </a>
+
+                <a href="https://www.instagram.com/alves_kauanx/">
+                    <span class="icon">📷</span>
+                    <p class="dev-link">alves_kauanx</p>
+                </a>
+
+                <a href="https://www.instagram.com/kayquekc_/">
+                    <span class="icon">📷</span>
+                    <p class="dev-link">kayquekc_</p>
+                </a>
+
+                <a href="https://www.instagram.com/pye_souza14/">
+                    <span class="icon">📷</span>
+                    <p class="dev-link">pye_souza14</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

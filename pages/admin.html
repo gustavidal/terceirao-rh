@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="icon" type="image/jpg" href="../img/logo-terceirao.jpg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="./admin.js" defer></script>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>🎓 Admin</h2>
+
+        <nav>
+            <button onclick="showTab('tasks')" class="active">📋 Tarefas</button>
+            <button onclick="showTab('projects')">📂 Projetos</button>
+            <button onclick="showTab('avisos')">🔔 Avisos</button>
+        </nav>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main>
+        <!-- TAREFAS -->
+        <section id="tasks" class="tab active">
+            <h2>Adicionar Tarefa</h2>
+
+            <div class="form">
+                <input id="taskName" placeholder="Nome da tarefa">
+                <select id="taskStatus">
+                    <option value="pendente">Pendente</option>
+                    <option value="andamento">Em andamento</option>
+                    <option value="concluido">Concluído</option>
+                </select>
+                <button>Salvar</button>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projects" class="tab">
+            <h2>Adicionar Projeto</h2>
+
+            <div class="form">
+                <input id="projectName" placeholder="Nome do projeto">
+                <input id="projectDesc" placeholder="Descrição">
+                <button>Salvar</button>
+            </div>
+        </section>
+
+        <!-- AVISOS -->
+        <section id="avisos" class="tab">
+            <h2>Novo Aviso</h2>
+
+            <div class="form">
+                <input id="avisoText" placeholder="Escreva o aviso">
+                <button>Postar</button>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
