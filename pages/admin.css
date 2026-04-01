@@ -1,11 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: "Inter", sans-serif;
     display: flex;
     height: 100vh;
 }
@@ -13,7 +6,7 @@ body {
 /* SIDEBAR */
 .sidebar {
     width: 220px;
-    background-color: #312f2f;
+    background: linear-gradient(180deg, #1f1f1f, #2a2a2a);
     color: white;
     padding: 20px;
 }
@@ -40,11 +33,11 @@ body {
 }
 
 .sidebar button:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .sidebar button.active {
-    background: #3b82f6;
+    background: #e17055;
     color: white;
 }
 
@@ -55,7 +48,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background: linear-gradient(to left, #e94230, #312f2f);
+    background: linear-gradient(135deg, #5a2a2a, #1f1f1f);
 }
 
 /* TABS */
@@ -70,7 +63,8 @@ main {
 
 /* FORM */
 .form {
-    background: white;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -88,8 +82,9 @@ main {
     outline: none;
 }
 
-.form input:focus {
-    border-color: #3b82f6;
+.form input:focus,
+.form select:focus {
+    border-color: #e17055;
 }
 
 /* BOTÃO */
@@ -97,12 +92,13 @@ main {
     padding: 12px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    background: linear-gradient(135deg, #e17055, #d35400);
     color: white;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.25s;
 }
 
 .form button:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
