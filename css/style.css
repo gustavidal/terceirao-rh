@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: linear-gradient(to right, #e94230, #312f2f);
+    background: linear-gradient(to right, #5a2a2a, #1f1f1f);
     color: white;
     position: fixed;
     z-index: 1000;
@@ -87,15 +87,15 @@ main {
 }
 
 .pendente {
-    background: #e74c3c;
+    background: #e74c3c; /* vermelho controlado */
 }
 
 .andamento {
-    background: #f39c12;
+    background: #f39c12; /* laranja suave */
 }
 
 .concluido {
-    background: #27ae60;
+    background: #2ecc71; /* verde moderno */
 }
 
 .task {
@@ -120,11 +120,11 @@ main {
 }
 
 .azul {
-    background: #3498db;
+    background: #3b82f6; /* azul moderno */
 }
 
 .marrom {
-    background: #8e5a3c;
+    background: #a855f7; /* roxo (fica MUITO melhor que marrom) */
 }
 
 /* PROJETOS */
@@ -142,15 +142,15 @@ main {
 }
 
 .blue {
-    background: #2980b9;
+    background: #2563eb;
 }
 
 .orange {
-    background: #e67e22;
+    background: #f97316;
 }
 
 .green {
-    background: #27ae60;
+    background: #22c55e;
 }
 
 /* AVISOS */
@@ -169,7 +169,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #5e3333;
+    background-color: #2a2a2a;
     border-radius: 8px;
     padding: 12px 5px 10px 5px;
     margin-top: 5px;
@@ -179,7 +179,7 @@ main {
 .instas a {
     display: flex;
     gap: 8px;
-    color: #e66051;
+    color: #ff6b5a;
     text-align: center;
     margin-left: 2.5em;
 }
@@ -193,7 +193,7 @@ main {
 }
 
 .instas a .dev-link:hover {
-    color: crimson;
+    color: #ff3b2e;
     text-decoration: underline;
 }
 
