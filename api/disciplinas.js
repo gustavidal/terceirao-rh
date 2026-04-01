@@ -34,25 +34,25 @@ export const DISCIPLINAS = [
     {
         "id": 6,
         "disciplina": "Língua Espanhola",
-        "sigla": false,
+        "sigla": "ESP",
         "mentor": "Valdecir David da Silva"
     },
     {
         "id": 7,
         "disciplina": "Língua Inglesa",
-        "sigla": false,
+        "sigla": "ING",
         "mentor": false
     },
     {
         "id": 8,
         "disciplina": "Língua Portuguesa",
-        "sigla": false,
+        "sigla": "POR",
         "mentor": "Abel José Mendes"
     },
     {
         "id": 9,
         "disciplina": "Matemática",
-        "sigla": false,
+        "sigla": "MAT",
         "mentor": "Eduardo Rodrigo Vedolin"
     },
     {
@@ -79,7 +79,7 @@ export const DISCIPLINAS = [
     {
         "id": 13,
         "disciplina": "Sociologia",
-        "sigla": false,
+        "sigla": "SOC",
         "mentor": "Ruth de Jesus Macedo"
     }
 ]
