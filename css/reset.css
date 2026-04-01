@@ -5,7 +5,6 @@
     font-family: "Space Grotesk", sans-serif;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
@@ -15,11 +14,13 @@ ul, ol, li {
     list-style: none;
 }
 
+
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background: linear-gradient(150deg, #e94230, #312f2f);
+    background: linear-gradient(135deg, #5a2a2a, #1f1f1f);
 }
 
 main {
