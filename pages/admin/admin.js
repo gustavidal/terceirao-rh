@@ -1,8 +1,8 @@
 'use strict'
 
-import { DISCIPLINAS } from "./api/disciplinas.js"
+import { DISCIPLINAS } from "../../api/disciplinas.js"
 
-function showTab(tabId) {
+window.showTab = function(tabId, event) {
     document.querySelectorAll(".tab").forEach(tab => {
         tab.classList.remove("active");
     });
@@ -13,6 +13,5 @@ function showTab(tabId) {
 
     document.getElementById(tabId).classList.add("active");
 
-    event.target.classList.add("active");
+    event.currentTarget.classList.add("active");
 }
-

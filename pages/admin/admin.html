@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="./admin.js" defer></script>
+    <script src="./admin.js" type="module"></script>
 </head>
 
 <body>
@@ -19,9 +19,9 @@
         <h2>🎓 Admin</h2>
 
         <nav>
-            <button onclick="showTab('tasks')" class="active">📋 Tarefas</button>
-            <button onclick="showTab('projects')">📂 Projetos</button>
-            <button onclick="showTab('avisos')">🔔 Avisos</button>
+            <button onclick="showTab('tasks', event)" class="active">📋 Tarefas</button>
+            <button onclick="showTab('projects', event)">📂 Projetos</button>
+            <button onclick="showTab('avisos', event)">🔔 Avisos</button>
         </nav>
     </aside>
 
