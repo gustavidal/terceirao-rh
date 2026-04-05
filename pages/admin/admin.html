@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="../../firebase.js"></script>
     <script src="./admin.js" type="module"></script>
 </head>
 
@@ -55,12 +56,16 @@
 
         <!-- AVISOS -->
         <section id="avisos" class="tab">
-            <h2>Novo Aviso</h2>
-
-            <div class="form">
-                <input id="avisoText" placeholder="Escreva o aviso">
-                <button>Postar</button>
-            </div>
+            <h2>Novo Evento</h2>
+        
+            <form id="formEvento" class="form">
+                <input id="titulo" placeholder="Título" required>
+                <input id="data" type="date" required>
+        
+                <select id="disciplina"></select>
+        
+                <button type="submit">Salvar</button>
+            </form>
         </section>
 
     </main>
